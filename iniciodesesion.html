@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vewport"content="widgt=divice-widht, initial-s">
+     <title>Document</title>
+     <link rel="stylesheet" href="iniciodesesion.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Inicio de sesion</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" required id="name">
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="contrasena">
+                <input type="password" required id="field">
+                <label>Contrasena</label>
+            </div>
+            <div class="Mostrar">    
+                Mostrar
+                <input type="checkbox" onclick="showPwd()">
+            </div>
+            <div class="recordar">Olvido su contrasena</div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                Quiero hacer el <a href="Registro.html">registro</a>
+            </di>
+            <script>
+                const showPwd = () =>{
+                    let input = document.querySelector("#field")
+                    if (input.type === "password"){  
+                      input.type = "text"
+                    }else{
+                        input.type = "password"
+                    }   
+                }
+            </script>    
+        </div>
+        </form>
+</body>
+</html>
